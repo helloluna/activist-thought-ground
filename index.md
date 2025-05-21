@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: home
 title: "Activist Thought Ground"
 description: "Philosophical reflections on animal ethics, structural violence, and the moral position of refusal."
 ---
