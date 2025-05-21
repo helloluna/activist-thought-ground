@@ -1,10 +1,9 @@
-index.md
-
 ---
 layout: home
 title: "Activist Thought Ground"
 permalink: /
 ---
+
 
 This section serves as a reflective ground for philosophical inquiry, ethical clarity, and existential questioning arising from the path of animal advocacy.  
 It archives dialogues, inner reasoning, and moral structure-building from the perspective of one who refuses to turn away.
