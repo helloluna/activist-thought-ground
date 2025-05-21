@@ -1,0 +1,35 @@
+_config.yml
+
+---
+title: "Activist Thought Ground"
+description: "Philosophical reflections on animal ethics, structural violence, and the moral position of refusal."
+baseurl: ""
+url: "https://helloluna.github.io"
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+# Appearance
+minimal_mistakes_skin: "default"
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Build settings
+collections:
+  chapters:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: chapters
+    values:
+      layout: single
+      toc: true
+      toc_sticky: true
+      read_time: true
+      author_profile: false
+      comments: false
