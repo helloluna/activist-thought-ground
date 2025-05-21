@@ -18,3 +18,4 @@ It archives dialogues, inner reasoning, and moral structure-building from the pe
 - [The City as Killing Structure](city_as_killing_structure) – Reflections on urban environments and invisible suffering.  
 - [Hope and Failure in Ethical Action](hope_and_failure) – Why we act even when we expect to lose._killing_structure.md) – Reflections on urban environments and invisible suffering.  
 - [Hope and Failure in Ethical Action](hope_and_failure.md) – Why we act even when we expect to lose.  
+[← Back to Main Site](https://helloluna.github.io/wa-animal-welfare-transparency/)
