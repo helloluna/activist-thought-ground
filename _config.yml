@@ -2,7 +2,7 @@
 ---
 title: "Activist Thought Ground"
 description: "Philosophical reflections on animal ethics, structural violence, and the moral position of refusal."
-baseurl: ""
+baseurl: "/activist-thought-ground"
 url: "https://helloluna.github.io"
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
