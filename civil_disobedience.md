@@ -1,3 +1,5 @@
+civil_disobedience.md
+
 ---
 layout: single
 title: "Civil Disobedience and the Ethics of Animal Liberation"
