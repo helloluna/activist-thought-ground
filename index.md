@@ -1,3 +1,5 @@
+index.md
+
 ---
 layout: home
 title: "Activist Thought Ground"
