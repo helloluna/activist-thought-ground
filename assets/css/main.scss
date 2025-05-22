@@ -19,3 +19,17 @@ body {
     /* … */
   }
 }
+
+/* —— override Minimal Mistakes container —— */
+@media screen and (min-width: 768px) {
+  .site-main .page__inner {
+    max-width: 880px !important;   /* 拉宽到 880px */
+    padding: 0 2rem !important;     /* 左右留空白 */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-main .page__inner {
+    max-width: 1040px !important;  /* 超宽屏再拉宽一点 */
+  }
+}
