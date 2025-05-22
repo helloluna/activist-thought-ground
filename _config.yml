@@ -1,0 +1,45 @@
+title: "Activist Thought Ground"
+description: "Philosophical reflections on animal ethics, structural violence, and the moral position of refusal."
+
+baseurl: "/activist-thought-ground"
+url: "https://helloluna.github.io"
+
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Collections
+collections:
+  chapters:
+    output: true
+    permalink: /chapters/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: chapters
+    values:
+      layout: single
+      author: "Hanyu Liu"
+      read_time: true
+      toc: true
+      toc_sticky: true
+
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: home
+      author: "Hanyu Liu"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
