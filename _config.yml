@@ -1,29 +1,36 @@
+# ─── 元信息 ──────────────────────────────────────
 title: "Activist Thought Ground"
 description: "Philosophical reflections on animal ethics, structural violence, and the moral position of refusal."
 
 url: "https://helloluna.github.io"
 baseurl: "/activist-thought-ground"
 
+# ─── 使用远程主题 ─────────────────────────────────
 remote_theme: "mmistakes/minimal-mistakes"
 
-minimal_mistakes_skin: "default"
-sass:
-  style: compressed
-
+# 必须启用这个插件，才能用 remote_theme
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-include-cache
 
+# 告诉 Jekyll 压缩输出 Sass
+sass:
+  style: compressed
+
+# Markdown 引擎
 markdown: kramdown
 kramdown:
   input: GFM
 
+# ─── Collections ─────────────────────────────────
 collections:
   chapters:
     output: true
     permalink: /chapters/:name/
 
+# ─── 默认布局 ────────────────────────────────────
 defaults:
   - scope:
       path: ""
@@ -42,6 +49,7 @@ defaults:
       layout: home
       author: "Hanyu Liu"
 
+# ─── 排除不需要编译的文件 ──────────────────────────
 exclude:
   - node_modules
   - vendor
