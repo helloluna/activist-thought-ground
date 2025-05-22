@@ -86,3 +86,28 @@ body {
   margin: 0 auto;
   padding: 2rem 1rem;
 }
+
+/* 📱 手机端保持默认，以下是桌面端优化 */
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 860px; /* 稍宽一点，仍然适度书本感 */
+    font-size: 19px;
+    line-height: 1.8;
+    padding: 3rem 2rem;
+  }
+
+  .page__content {
+    padding: 2rem 3rem;
+  }
+
+  h1, h2, h3, h4 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 960px; /* 超大屏再宽一点点 */
+  }
+}
