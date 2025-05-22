@@ -25,6 +25,13 @@ collections:
     output: true
     permalink: /chapters/:name/
 
+# 加载自定义样式
+minimal_mistakes_skin: "default"
+
+assets:
+  css:
+    - "/assets/css/custom-override.css"
+
 defaults:
   - scope:
       path: ""
@@ -43,13 +50,7 @@ defaults:
       layout: home
       author: "Hanyu Liu"
 
-      minimal_mistakes_skin: "default"
-
-# 加载自定义样式
-assets:
-  css:
-    - /assets/css/custom.css
-
+      
 exclude:
   - Gemfile
   - Gemfile.lock
