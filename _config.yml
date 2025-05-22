@@ -51,7 +51,5 @@ defaults:
 
 # 排除项
 exclude:
-  - Gemfile
-  - Gemfile.lock
   - node_modules
   - vendor
