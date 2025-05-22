@@ -142,3 +142,26 @@ body {
     max-width: 1040px !important;  /* 超宽屏再拉宽一点 */
   }
 }
+/* ——— 同时拉宽 Minimal Mistakes 的两个核心容器 ——— */
+@media screen and (min-width: 768px) {
+  /* 主容器 #main */
+  #main.wrapper {
+    max-width: 880px !important;
+    margin: 0 auto !important;
+    padding: 0 2rem !important;
+  }
+
+  /* 内部包裹 <main> */
+  .page__inner {
+    max-width: 880px !important;
+    margin: 0 auto !important;
+    padding: 0 2rem !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #main.wrapper,
+  .page__inner {
+    max-width: 1040px !important;
+  }
+}
