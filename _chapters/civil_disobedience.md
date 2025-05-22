@@ -24,4 +24,5 @@ Civil disobedience is not merely protest—it is a refusal to participate in cru
 
 In this act, we reclaim not only the dignity of animals, but the conscience of humanity itself.
 
+
 [← Back to Activist Thought Ground](../index.html)
