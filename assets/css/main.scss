@@ -1,121 +1,21 @@
 ---
 ---
 
+// 导入主题默认样式
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* ========== 全局布局与背景 ========== */
+/* 你所有自定义的 Tufte 风格 CSS 从这里开始 */
+
 body {
-  background-color: #fcf9f2; /* 淡黄纸感 */
-  color: #111;
-  font-family: "Palatino Linotype", Georgia, serif;
-  font-size: 18px;
-  line-height: 1.7;
-  max-width: 740px;
-  margin: 0 auto;
-  padding: 2.5rem 1rem;
+  background-color: #fcf9f2;
+  /* …其余样式… */
 }
 
-/* 页面内容区优化 */
-.page__content {
-  background: none;
-  box-shadow: none;
-  padding: 0;
-}
-
-/* 页头简化 */
-.site-header {
-  box-shadow: none;
-  background: transparent;
-  font-family: Georgia, serif;
-}
-
-/* 红色标题风格 */
-h1, h2, h3, h4, h5, h6 {
-  color: #990000;
-  font-family: "Georgia", serif;
-  font-weight: normal;
-  letter-spacing: 0.5px;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* 链接：红色点状下划线 */
-a, a:visited {
-  color: #990000;
-  text-decoration: none;
-  border-bottom: 1px dotted #990000;
-}
-
-a:hover {
-  border-bottom: 1px solid #990000;
-}
-
-/* 列表缩进优化 */
-ul, ol {
-  padding-left: 2em;
-}
-
-/* 引用块样式 */
-blockquote {
-  border-left: 3px solid #ccc;
-  padding-left: 1em;
-  color: #555;
-  font-style: italic;
-  margin: 2em 0;
-}
-
-/* 小字体注释 */
-small {
-  font-size: 0.9em;
-  color: #666;
-}
-
-/* 页脚 */
-.site-footer {
-  font-size: 14px;
-  color: #888;
-  text-align: center;
-  margin-top: 4rem;
-}
-
-/* 额外排版优化 */
-hr {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin: 2em 0;
-}
-
-table {
-  background: #fffefb;
-  border-collapse: collapse;
-}
-th, td {
-  border: 1px solid #ececec;
-  padding: 0.5em 1em;
-}
-
-/* ========== 响应式：桌面端更宽，留白更大 ========== */
+/* 响应式优化 */
 @media screen and (min-width: 768px) {
   body {
     max-width: 880px;
-    font-size: 19px;
-    line-height: 1.8;
-    padding: 3rem 2rem;
-  }
-
-  .page__content {
-    padding: 2rem 3rem;
-  }
-
-  h1, h2, h3, h4 {
-    margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  body {
-    max-width: 1040px;
+    /* … */
   }
 }
