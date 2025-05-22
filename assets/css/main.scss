@@ -1,40 +1,35 @@
 ---
 ---
 
-// 导入主题默认样式
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* 你所有自定义的 Tufte 风格 CSS 从这里开始 */
-
-
-/* ========== 全局布局与背景 ========== */
+/* ── 全局布局与背景 ───────────────────────────────── */
 body {
-  background-color: #fcf9f2; /* 淡黄纸感 */
+  background-color: #fcf9f2;       /* 淡黄纸感 */
   color: #111;
   font-family: "Palatino Linotype", Georgia, serif;
   font-size: 18px;
   line-height: 1.7;
-  max-width: 740px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
 }
 
-/* ========== 页面内容区优化 ========== */
+/* ── 去掉内置的 content 区块阴影/背景 ────────────────── */
 .page__content {
   background: none;
   box-shadow: none;
   padding: 0;
 }
 
-/* 移除页头阴影，简洁化 */
+/* ── 页头简化 ─────────────────────────────────────── */
 .site-header {
-  box-shadow: none;
   background: transparent;
+  box-shadow: none;
   font-family: Georgia, serif;
 }
 
-/* ========== 文字风格 ========== */
+/* ── 文字风格 ─────────────────────────────────────── */
 h1, h2, h3, h4, h5, h6 {
   color: #990000;
   font-family: "Georgia", serif;
@@ -44,23 +39,22 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 
-/* 链接：红色点状下划线 */
+/* ── 链接 ─────────────────────────────────────────── */
 a, a:visited {
   color: #990000;
   text-decoration: none;
   border-bottom: 1px dotted #990000;
 }
-
 a:hover {
   border-bottom: 1px solid #990000;
 }
 
-/* 列表对齐优化 */
+/* ── 列表缩进 ─────────────────────────────────────── */
 ul, ol {
   padding-left: 2em;
 }
 
-/* 引用块样式 */
+/* ── 引用块 ───────────────────────────────────────── */
 blockquote {
   border-left: 3px solid #ccc;
   padding-left: 1em;
@@ -69,38 +63,7 @@ blockquote {
   margin: 2em 0;
 }
 
-/* 小字体注释 */
-small {
-  font-size: 0.9em;
-  color: #666;
-}
-
-/* 📱 手机端保持默认，以下是桌面端优化 */
-@media screen and (min-width: 768px) {
-  body {
-    max-width: 860px; /* 稍宽一点，仍然适度书本感 */
-    font-size: 19px;
-    line-height: 1.8;
-    padding: 3rem 2rem;
-  }
-
-  .page__content {
-    padding: 2rem 3rem;
-  }
-
-  h1, h2, h3, h4 {
-    margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  body {
-    max-width: 960px; /* 超大屏再宽一点点 */
-  }
-}
-
-/* ========== 页脚样式 ========== */
+/* ── 页脚 ─────────────────────────────────────────── */
 .site-footer {
   font-size: 14px;
   color: #888;
@@ -108,72 +71,29 @@ small {
   margin-top: 4rem;
 }
 
-/* Improve typography spacing */
-body {
-  line-height: 1.7;
-  font-size: 18px;
-  max-width: 740px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-body {
-  background-color: #fcf9f2;
-  /* …其余样式… */
-}
+/* ── 移动端保持上述紧凑样式 ───────────────────────── */
 
-/* 响应式优化 */
+/* ── 平板 & 桌面：微调字体 & 内边距 ───────────────── */
 @media screen and (min-width: 768px) {
   body {
-    max-width: 880px;
-    /* … */
+    font-size: 19px;
+    line-height: 1.8;
+    padding: 3rem 2rem;
+  }
+  .page__content {
+    padding: 2rem 3rem;
   }
 }
 
-/* —— override Minimal Mistakes container —— */
+/* ── 核心：拉宽主题容器 ────────────────────────────── */
 @media screen and (min-width: 768px) {
-  .site-main .page__inner {
-    max-width: 880px !important;   /* 拉宽到 880px */
-    padding: 0 2rem !important;     /* 左右留空白 */
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .site-main .page__inner {
-    max-width: 1040px !important;  /* 超宽屏再拉宽一点 */
-  }
-}
-/* ——— 同时拉宽 Minimal Mistakes 的两个核心容器 ——— */
-@media screen and (min-width: 768px) {
-  /* 主容器 #main */
-  #main.wrapper {
+  /* 所有 .wrapper（包括 #main.wrapper） */
+  .wrapper {
     max-width: 880px !important;
     margin: 0 auto !important;
     padding: 0 2rem !important;
   }
-
-  /* 内部包裹 <main> */
-  .page__inner {
-    max-width: 880px !important;
-    margin: 0 auto !important;
-    padding: 0 2rem !important;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  #main.wrapper,
-  .page__inner {
-    max-width: 1040px !important;
-  }
-}
-/* ——— 同时拉宽 Minimal Mistakes 的两层容器 ——— */
-@media screen and (min-width: 768px) {
-  /* 最外层 wrapper */
-  #main.wrapper {
-    max-width: 880px !important;
-    margin: 0 auto !important;
-    padding: 0 2rem !important;
-  }
-  /* 真正承载文章内容的 inner 容器 */
+  /* 真正承载文章内容的第二层容器 */
   .page__inner {
     max-width: 880px !important;
     margin: 0 auto !important;
@@ -181,7 +101,7 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  #main.wrapper,
+  .wrapper,
   .page__inner {
     max-width: 1040px !important;
   }
