@@ -4,7 +4,7 @@ description: "Philosophical reflections on animal ethics, structural violence, a
 url: "https://helloluna.github.io"
 baseurl: "/activist-thought-ground"
 
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes"
 
 minimal_mistakes_skin: "default"
 sass:
