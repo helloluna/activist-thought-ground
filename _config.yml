@@ -39,6 +39,13 @@ defaults:
       layout: home
       author: "Hanyu Liu"
 
+      minimal_mistakes_skin: "default"
+
+# 加载自定义样式
+assets:
+  css:
+    - /assets/css/custom.css
+
 exclude:
   - Gemfile
   - Gemfile.lock
