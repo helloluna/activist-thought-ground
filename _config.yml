@@ -24,6 +24,9 @@ collections:
     output: true
     permalink: /chapters/:name/
 
+include:
+  - _chapters
+
 # Defaults
 defaults:
   - scope:
