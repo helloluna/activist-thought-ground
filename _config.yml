@@ -22,7 +22,7 @@ plugins:
 collections:
   chapters:
     output: true
-    permalink: /:name/
+    permalink: /chapters/:name/
 
 # Defaults
 defaults:
