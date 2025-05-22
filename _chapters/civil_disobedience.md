@@ -2,7 +2,6 @@
 layout: chapter
 title: "Civil Disobedience and the Ethics of Animal Liberation"
 ---
-
 In this reflection, we explore how the philosophy of civil disobedience, inspired by Henry David Thoreau, can be applied to the struggle for animal rights, particularly in the context of industrial livestock systems—especially pigs, whose suffering often remains hidden from public consciousness.
 
 ## 1. Why Civil Disobedience Matters
