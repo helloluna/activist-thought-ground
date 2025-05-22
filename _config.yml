@@ -1,24 +1,18 @@
 title: Activist Thought Ground
 description: "Philosophical reflections on animal ethics, structural violence, and the moral position of refusal."
 
-# GitHub Pages base settings
 baseurl: "/activist-thought-ground"
 url: "https://helloluna.github.io"
-
-theme: null  # 使用自定义主题
+theme: null
 
 markdown: kramdown
 kramdown:
   input: GFM
 
-# Plugins: 只用 GitHub Pages 官方允许的
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-  permalink: pretty
-
-# Collection for chapters
 collections:
   chapters:
     output: true
@@ -34,6 +28,7 @@ defaults:
     values:
       layout: chapter
       author: "Hanyu Liu"
+
   - scope:
       path: ""
       type: pages
