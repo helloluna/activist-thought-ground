@@ -4,33 +4,29 @@ description: "Philosophical reflections on animal ethics, structural violence, a
 url: "https://helloluna.github.io"
 baseurl: "/activist-thought-ground"
 
-# 本地主题（非 remote_theme）
+# 使用本地主题
 theme: minimal-mistakes-jekyll
 
-# 自定义皮肤与 CSS 覆盖
+# 加载自定义样式
 minimal_mistakes_skin: "default"
 assets:
   css:
     - "/assets/css/custom-override.css"
 
-# 插件（GitHub Pages 默认支持）
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-include-cache
 
-# Markdown 设置
 markdown: kramdown
 kramdown:
   input: GFM
 
-# 自定义章节 collection
 collections:
   chapters:
     output: true
     permalink: /chapters/:name/
 
-# 默认布局与设置
 defaults:
   - scope:
       path: ""
@@ -49,7 +45,7 @@ defaults:
       layout: home
       author: "Hanyu Liu"
 
-# 排除项
+# 不再排除 Gemfile
 exclude:
   - node_modules
   - vendor
