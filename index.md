@@ -13,7 +13,7 @@ It archives dialogues, inner reasoning, and moral structure-building from the pe
 ## Chapters
 
 - [Sentience vs. Utilitarian Calculus](/sentience_vs_utilitarianism/) – Why pain, not productivity, must define worth.  
-- [Civil Disobedience and the Ethics of Animal Liberation](/civil_disobedience/) – On when breaking the law becomes a moral obligation in the face of systemic injustice.  
+- [Civil Disobedience and the Ethics of Animal Liberation]({{ site.baseurl }}/chapters/civil_disobedience) – On when breaking the law becomes a moral obligation in the face of systemic injustice.
 - [Freedom, Flesh, and the Myth of Consent](/freedom_and_flesh/) – On agency under domestication.  
 - [The Problem of Silence](/the_problem_of_silence/) – What it means to witness ethically.  
 - [The City as Killing Structure](/city_as_killing_structure/) – Reflections on urban environments and invisible suffering.  
