@@ -10,3 +10,9 @@ This is a reflective archive of philosophical inquiry, ethical clarity, and exis
 ## Chapters
 
 - [Civil Disobedience and the Ethics of Animal Liberation](/activist-thought-ground/chapters/civil_disobedience/)
+
+---
+
+<p style="margin-top: 3rem; font-size: 1.1em;">
+  ← <a href="https://helloluna.github.io/wa-animal-welfare-transparency/">Back to WA Transparency Archive (Main Site)</a>
+</p>
