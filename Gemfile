@@ -1,8 +1,6 @@
-source "https://rubygems.org"
-
-gem "jekyll", "~> 4.3.2"
+gem "jekyll", "~>4.3"
 gem "minimal-mistakes-jekyll"
 gem "jekyll-feed"
 gem "jekyll-seo-tag"
 gem "jekyll-include-cache"
-gem "webrick" # for Ruby 3.x serve
+gem "webrick"
