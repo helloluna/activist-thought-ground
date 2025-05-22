@@ -5,17 +5,16 @@ url: "https://helloluna.github.io"
 baseurl: "/activist-thought-ground"
 
 theme: minimal-mistakes-jekyll
-
-minimal_mistakes_skin: "default"
-assets:
-  css:
-    - "/assets/css/custom-override.css"
-
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-include-cache
 
+# 使用自定义的 main.scss
+sass:
+  style: compressed
+  
 markdown: kramdown
 kramdown:
   input: GFM
