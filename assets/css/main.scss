@@ -165,3 +165,24 @@ body {
     max-width: 1040px !important;
   }
 }
+/* ——— 同时拉宽 Minimal Mistakes 的两层容器 ——— */
+@media screen and (min-width: 768px) {
+  /* 最外层 wrapper */
+  #main.wrapper {
+    max-width: 880px !important;
+    margin: 0 auto !important;
+    padding: 0 2rem !important;
+  }
+  /* 真正承载文章内容的 inner 容器 */
+  .page__inner {
+    max-width: 880px !important;
+    margin: 0 auto !important;
+    padding: 0 2rem !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #main.wrapper,
+  .page__inner {
+    max-width: 1040px !important;
+  }
+}
