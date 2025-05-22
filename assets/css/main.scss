@@ -3,8 +3,7 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
-
-// 在此处添加你的自定义样式
+/* ========== 全局布局与背景 ========== */
 body {
   background-color: #fcf9f2; /* 淡黄纸感 */
   color: #111;
@@ -16,6 +15,21 @@ body {
   padding: 3rem 1.5rem;
 }
 
+/* ========== 页面内容区优化 ========== */
+.page__content {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* 移除页头阴影，简洁化 */
+.site-header {
+  box-shadow: none;
+  background: transparent;
+  font-family: Georgia, serif;
+}
+
+/* ========== 文字风格 ========== */
 h1, h2, h3, h4, h5, h6 {
   color: #990000;
   font-family: "Georgia", serif;
@@ -25,4 +39,50 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 
-/* 其他自定义样式 */
+/* 链接：红色点状下划线 */
+a, a:visited {
+  color: #990000;
+  text-decoration: none;
+  border-bottom: 1px dotted #990000;
+}
+
+a:hover {
+  border-bottom: 1px solid #990000;
+}
+
+/* 列表对齐优化 */
+ul, ol {
+  padding-left: 2em;
+}
+
+/* 引用块样式 */
+blockquote {
+  border-left: 3px solid #ccc;
+  padding-left: 1em;
+  color: #555;
+  font-style: italic;
+  margin: 2em 0;
+}
+
+/* 小字体注释 */
+small {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* ========== 页脚样式 ========== */
+.site-footer {
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+/* Improve typography spacing */
+body {
+  line-height: 1.7;
+  font-size: 18px;
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
