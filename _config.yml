@@ -16,6 +16,8 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+  permalink: pretty
+
 # Collection for chapters
 collections:
   chapters:
