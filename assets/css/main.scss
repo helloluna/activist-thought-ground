@@ -1,0 +1,28 @@
+---
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// 在此处添加你的自定义样式
+body {
+  background-color: #fcf9f2; /* 淡黄纸感 */
+  color: #111;
+  font-family: "Palatino Linotype", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #990000;
+  font-family: "Georgia", serif;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* 其他自定义样式 */
